@@ -3,7 +3,7 @@
 <head>
     @section('head')
     <title>MyNav</title>
-    <link href={{ url('assets/bootstrap/css/bootstrap.yeti.css') }} rel="stylesheet">
+    <link href={{ url('assets/bootstrap/css/bootstrap.cosmo.css') }} rel="stylesheet">
     @show
 </head>
 <body>
@@ -48,6 +48,6 @@
 </div>
 
 </body>
-<script src={{ url('assets/js/jquery/jquery-1.8.2.min.js') }}></script>
+
 <script src={{ url('assets/js/bootstrap.min.js') }}></script>
 </html>

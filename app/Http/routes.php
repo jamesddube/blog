@@ -21,10 +21,10 @@ Route::get('auth/logout', 'Auth\AuthController@getLogout');
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
 
-Route::get('/', 'PostController@index');
+Route::get('/', 'ArticleController@index');
 
-Route::resource('post','PostController');
+Route::resource('article','ArticleController');
 
 Route::group(['prefix' => 'admin'],function(){
-    Route::resource('post','PostController');
+    Route::resource('article','ArticleController');
 });

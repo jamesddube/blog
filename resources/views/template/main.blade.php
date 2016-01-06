@@ -31,17 +31,18 @@
     <link rel="icon" sizes="196x196" href="{{ url('/assets/images/android-homescreenc920.png?v=be7554c9c2')}}" />
     <link rel="apple-touch-icon" href="assets/images/apple-touch-iconc920.png?v=be7554c9c2" />
 
-    <link rel="prerender" href="{{ ('/content/images/2015/01/DSCF2988-Edit-1.jpg"') }}"/>
-    <link rel="prefetch" href="{{ ('/content/images/2015/01/DSCF2988-Edit-1.jpg"') }}" />
-    <link rel="dns-prefetch" href={{ ('"http://fonts.googleapis.com/"') }}/>
+    <link rel="prerender" href="{{ url('content/images/2015/01/DSCF2988-Edit-1.jpg"') }}"/>
+    <link rel="prefetch" href="{{ url('content/images/2015/01/DSCF2988-Edit-1.jpg"') }}" />
+    <link rel="dns-prefetch" href={{ url('"http://fonts.googleapis.com/"') }}/>
 
-    <link rel="stylesheet" href="{{ ('/assets/bootstrap/css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ ('/assets/css/normalizec920.css?v=be7554c9c2"') }}" />
-    <link rel="stylesheet" href="{{ ('/assets/css/basicsc920.css?v=be7554c9c2"') }}" />
-    <link rel="stylesheet" href="{{ ('/assets/css/animatec920.css?v=be7554c9c2"') }}" />
-    <link rel="stylesheet" href="{{ ('/assets/css/highlightc920.css?v=be7554c9c2"') }}" />
-    <link rel="stylesheet" href="{{ ('/assets/css/phantomc920.css?v=be7554c9c2"') }}" />
-    <link rel="stylesheet" href="{{ ('/assets/css/prismc920.css?v=be7554c9c2"') }}" />
+    <link rel="stylesheet" href="{{ url('assets/bootstrap/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ url('assets/css/normalizec920.css?v=be7554c9c2"') }}" />
+    <link rel="stylesheet" href="{{ url('assets/css/basicsc920.css?v=be7554c9c2"') }}" />
+    <link rel="stylesheet" href="{{ url('assets/css/animatec920.css?v=be7554c9c2"') }}" />
+    <link rel="stylesheet" href="{{ url('assets/css/highlightc920.css?v=be7554c9c2"') }}" />
+    <link rel="stylesheet" href="{{ url('assets/css/phantomc920.css?v=be7554c9c2"') }}" />
+    <link rel="stylesheet" href="{{ url('assets/css/prismc920.css?v=be7554c9c2"') }}" />
+        <script src={{ url('assets/js/jquery.minc920.js') }}></script>
 
 
 
@@ -73,6 +74,7 @@
         </a>
         <p class="content">James Dube</p>
         <a class="content pushMainRight" href="http://kettle.io/">&laquo; home</a>
+         <a class="content pushMainRight brand" ><img  class="img-circle" src="{{ url('content/images/2015/01/logo.png') }}" ></a>
     </div>
 </nav>
     <!-- End of Header -->
@@ -90,8 +92,8 @@
         </div>
     </footer>
 
-<script src="{{ ('/assets/js/html5shiv-printshivc920.js?v=be7554c9c2') }}"></script>
-<script src="{{ ('/assets/js/respondc920.js?v=be7554c9c2') }}"></script>
+<script src="{{ ('assets/js/html5shiv-printshivc920.js?v=be7554c9c2') }}"></script>
+<script src="{{ ('assets/js/respondc920.js?v=be7554c9c2') }}"></script>
 
 
 

@@ -6,7 +6,7 @@
     <div class="sample animated fadeIn">
         <div class="container">
             <div class="title animated fadeInUp">
-                <a href="{{ url('post/'.$article->slug) }}">
+                <a href="{{ url('article/'.$article->slug) }}">
                     <h1>{{ $article->title }}</h1>
                 </a>
             </div>
@@ -24,7 +24,7 @@
 
     <article class="excerpt animated fadeIn post">
         <div class="container">
-            <p>{!! $article->body !!}</p>
+            <p>{!! $article->body() !!}</p>
         </div>
     </article>
     @endforeach

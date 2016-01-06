@@ -14,10 +14,10 @@ class CreateTableComments extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer("post_id")->unsigned();
+            $table->integer("article_id")->unsigned();
             $table->string('comment');
             $table->timestamps();
-            $table->foreign("post_id")->references("id")->on("posts")->onUpdate("cascade");
+            $table->foreign("article_id")->references("id")->on("articles")->onUpdate("cascade");
         });
     }
 
@@ -29,7 +29,7 @@ class CreateTableComments extends Migration
     public function down()
     {
         Schema::table('comments', function ($table) {
-            $table->dropForeign('comments_post_id_foreign');
+            $table->dropForeign('comments_article_id_foreign');
         });
         Schema::drop('comments');
     }

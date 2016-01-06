@@ -1,9 +1,9 @@
 @extends('template.main')
 @section('content')
-    <header class="animated fadeIn" style="background-image: url({{ $post->image_header_url }})">
+    <header class="animated fadeIn" style="background-image: url({{ $article->image_header_url }})">
         <div class="container" data-stellar-ratio="0.75">
             <div class="title animated fadeInUp">
-                <h1>{{ $post->title }}</h1>
+                <h1>{{ $article->title }}</h1>
 
                 <div class="share">
                     Share this on <a id="twitter"
@@ -15,7 +15,7 @@
             <div class="sidebar text-right meta">
                 <div class="published animated fadeInUp">
                     <strong>Published</strong>
-                    <time datetime="2015-10-01">{{ $post->created_at}}</time>
+                    <time datetime="2015-10-01">{{ $article->PublishedAt()}}</time>
                 </div>
                 <span class="separator animated fadeInUp">//</span>
 
@@ -29,7 +29,7 @@
 
         <article class="animated fadeIn post">
             <div class="container">
-                {!!  $post->body !!}
+                {!!  $article->body !!}
             </div>
         </article>
 

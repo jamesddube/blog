@@ -7,7 +7,6 @@
 <script src="{{ url('assets/js/bootstrap.js') }}"></script>
 <script src="{{ url('assets/js/summernote.js') }}"></script>
 
-<link href="{{ url('assets/css/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
 <link href="{{ url('assets/css/font-awesome.css') }}" rel="stylesheet">
 <link href="{{ url('assets/css/summernote.css') }}" rel="stylesheet">
 @endsection
@@ -19,7 +18,7 @@
                 <div class="panel-heading">Create Post</div>
                 <div class="panel-body">
                     <div class="container-fluid">
-                        <form class="form-horizontal" method="post" action="{{ url('post') }}" enctype="multipart/form-data">
+                        <form class="form-horizontal" method="post" action="{{ url('article') }}" enctype="multipart/form-data">
                             {!! csrf_field() !!}
                             <div class="row">
                                 <div class="col-md-5">

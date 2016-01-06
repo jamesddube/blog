@@ -22,7 +22,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     ];
 });
 
-$factory->define(App\Post::class, function (Faker\Generator $faker) {
+$factory->define(App\Article::class, function (Faker\Generator $faker) {
     $title =$faker->sentence(5);
     return [
         'title' => $title,

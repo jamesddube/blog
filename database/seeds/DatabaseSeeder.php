@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
         factory('App\User', 3)->create()
             ->each(function($u)
             {
-                $u->posts()->save(factory('App\Post')->make());
+                $u->articles()->save(factory('App\Article')->make());
             });
 
         factory('App\Comment', 2)->create();

@@ -5,31 +5,31 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CreatePostRequest;
 use App\User;
 use Illuminate\Http\Request;
-use App\Post;
+use App\Article;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Str;
 
-class PostController extends Controller
+class ArticleController extends Controller
 {
     public function index()
     {
-        $posts = Post::simplePaginate(5);
+        $posts = Article::simplePaginate(5);
 
-        return view('pages.index',compact('posts'));
+        return view('article.index',compact('posts'));
     }
 
     public function show($id)
     {
-        $post = Post::findBySlug($id);
+        $article = Article::findBySlug($id);
 
-        return view('pages.post',compact('post'));
+        return view('article.show',compact('article'));
     }
 
     public function create()
     {
-        return view('pages.create');
+        return view('article.create');
     }
 
     public function store(CreatePostRequest $request)
@@ -37,12 +37,15 @@ class PostController extends Controller
 
         $request->merge(['image_header_url' => 'assets/image','user_id' => 1,'slug'=>Str::slug($request->input('title'))]);
 
-        $post = new Post($request->all());
+        $post = new Article($request->all());
+
+        $fileName = $post->savePicture($request->file('image'));
+
+        $post->image_header_url = url($fileName);
 
         $user = User::find(1);
 
-        return $user->posts()->save($post);
-
+        return $user->articles()->save($post);
 
     }
 }
