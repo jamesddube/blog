@@ -1,0 +1,24 @@
+@extends('template.admin')
+@section('content')
+<header style="background-image: url('http://intersect.dev/assets/img/posts/20151222_175334.jpg')">
+    <div class="row layOut" xmlns:http="urn:oasis:names:tc:xliff:document:1.2">
+        <div class="col-md-2">
+            <h3>Published</h3>
+        </div>
+        <div class="col-md-8">
+
+            <h1>What to Expect in Your Interview for a Pharmacist Job?</h1>
+        </div>
+        <div class="col-md-2">
+            info
+        </div>
+    </div>
+</header>
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        It takes a lot of effort, and six to eight years of studying, just to obtain a qualification of a pharmacist. One spends years at school and once he finally graduates, he finds himself in a big debt. Many people invested significant amount of time and money just to find themselves unemployed. They didnot get a job of a pharmacist, because of oversaturated job market. But how is it possible? There is a pharmacy on every corner, isn’t it?
+
+        Many new pharmacies are opened every year, that’s true. However, there are still much more graduates from this field than the market can absorb. On the top of that, once a person gets a job in a pharmacy, she typically keeps it for many years. There are definitely not so many job openings if we compare it with other fields of employment in healthcare. Statistics show that more than ten applicants are interviewed for every single job opening for a pharmacist. One job, ten candidates. On the pages ofPharmacistInterviewQuestions.com, we will try to help you to be the one out of ten and get a job. Welcome!
+    </div>
+</div>
+@endsection

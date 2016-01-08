@@ -21,14 +21,14 @@ class ArticleController extends Controller
 
         $posts = Article::orderBy('created_at','desc')->simplePaginate(5);
 
-        return view('article.index',compact('posts'));
+        return view('sample.index',compact('posts'));
     }
 
     public function show($id)
     {
         $article = Article::findBySlug($id);
 
-        return view('article.show',compact('article'));
+        return view('sample.show',compact('article'));
     }
 
     public function create()
@@ -38,7 +38,6 @@ class ArticleController extends Controller
 
     public function store(CreatePostRequest $request)
     {
-
         $request->merge(['image_header_url' => 'assets/image','user_id' => 1,'slug'=>Str::slug($request->input('title'))]);
 
         $post = new Article($request->all());

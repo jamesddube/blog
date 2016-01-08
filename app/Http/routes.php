@@ -10,8 +10,12 @@
 | and give it the controller to call when that URI is requested.
 |
 */
+Route::get('sample/{id}',function($id){
+  return view('sample.show');
+});
+
 Route::get('sample',function(){
-  return view('sample.index');
+    return view('sample.index');
 });
 
 // Authentication routes...

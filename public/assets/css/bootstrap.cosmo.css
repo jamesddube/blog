@@ -1107,7 +1107,7 @@ a {
 a:hover,
 a:focus {
     color: #165ba8;
-    text-decoration: underline;
+    text-decoration: none;
 }
 a:focus {
     outline: thin dotted;
@@ -4502,8 +4502,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
 }
 .navbar-default {
-    background-color: transparent;
-
+    background-color: #2d353c;
+    color: black;
 }
 .navbar-default .navbar-brand {
     color: #ffffff;
