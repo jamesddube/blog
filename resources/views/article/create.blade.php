@@ -3,7 +3,7 @@
 @section('head')
     @parent
     <!-- include libraries(jQuery, bootstrap, fontawesome) -->
-<script src="{{ url('assets/js/jquery.minc920.js') }}"></script>
+<script src="{{ url('assets/js/jquery.min.js') }}"></script>
 <script src="{{ url('assets/js/bootstrap.js') }}"></script>
 <script src="{{ url('assets/js/summernote.js') }}"></script>
 

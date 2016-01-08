@@ -1,9 +1,11 @@
-## Blog for James D. Dube
+## Blog for James Dube
 
-## Security Vulnerabilities
+temporarily you can view it [here](http://ujkk1f990621.jamesdube.koding.io/blog/public/)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to me at jamesddube@live.com. All security vulnerabilities will be promptly addressed.
+## Issues, Vulnerabilities etc
+
+If you discover a vulnerability, issues or room for improvement within my blog, please send an e-mail to me at jamesddube@live.com.
 
 ### License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+[MIT license](http://opensource.org/licenses/MIT)

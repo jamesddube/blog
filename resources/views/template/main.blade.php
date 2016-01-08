@@ -35,14 +35,15 @@
     <link rel="prefetch" href="{{ url('content/images/2015/01/DSCF2988-Edit-1.jpg"') }}" />
     <link rel="dns-prefetch" href={{ url('"http://fonts.googleapis.com/"') }}/>
 
-    <link rel="stylesheet" href="{{ url('assets/bootstrap/css/bootstrap.min.css') }}" />
+    <link href={{ url('assets/css/bootstrap.paper.css') }} rel="stylesheet">
     <link rel="stylesheet" href="{{ url('assets/css/normalizec920.css?v=be7554c9c2"') }}" />
     <link rel="stylesheet" href="{{ url('assets/css/basicsc920.css?v=be7554c9c2"') }}" />
     <link rel="stylesheet" href="{{ url('assets/css/animatec920.css?v=be7554c9c2"') }}" />
     <link rel="stylesheet" href="{{ url('assets/css/highlightc920.css?v=be7554c9c2"') }}" />
     <link rel="stylesheet" href="{{ url('assets/css/phantomc920.css?v=be7554c9c2"') }}" />
     <link rel="stylesheet" href="{{ url('assets/css/prismc920.css?v=be7554c9c2"') }}" />
-        <script src={{ url('assets/js/jquery.minc920.js') }}></script>
+      <link rel="stylesheet" href="{{ url('assets/css/style.css') }}" />
+        <script src={{ url('assets/js/jquery.min.js') }}></script>
 
 
 
@@ -67,16 +68,32 @@
     @show
 </head>
 <body class="home-template">
-<nav class="animated fadeIn navigation">
-    <div class="container">
-        <a href="{{ url() }}" class="text-right sidebar brand ">
-            <img src="{{ url('content/images/2015/01/logo.png') }}" alt="/blog" />
-        </a>
-        <p class="content">James Dube</p>
-        <a class="content pushMainRight" href="http://kettle.io/">&laquo; home</a>
-         <a class="content pushMainRight brand" ><img  class="img-circle" src="{{ url('content/images/2015/01/logo.png') }}" ></a>
-    </div>
-</nav>
+  <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="{{ url() }}#">Intersect</a>
+
+          <div class="navbar-header navbar-right">
+              <ul class="nav navbar-nav ">
+                  <li><a href="{{ url() }}">Home</a></li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Subjects<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="{{ url('admin/posts/create') }}">Add New Post</a></li>
+                          <li><a href="{{ url('admin/posts') }}">View Posts</a></li>
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Programs<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                          <li><a href="{{ url('admin/programs/create') }}">Add New Program</a></li>
+                          <li><a href="{{ url('admin/programs') }}">View Programs</a></li>
+                      </ul>
+                  </li>
+                  <li class="dropdown"><a href="{{ url('about') }}">About</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
     <!-- End of Header -->
 
     <div class="main">

@@ -5,7 +5,7 @@
     </div>
 </footer>
 
-<script src="{{ url('public/jquery.minc920.js?v=be7554c9c2')}}"></script>
+<script src="{{ url('public/jquery.min.js?v=be7554c9c2')}}"></script>
 
 <script src="{{ url('assets/js/fastclickc920.js?v=be7554c9c2')}}"></script>
 <script src="{{ url('assets/js/prismc920.js?v=be7554c9c2')}}"></script>

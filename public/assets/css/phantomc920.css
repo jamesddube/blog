@@ -157,6 +157,9 @@ strong {
 a.pushMainRight {
 	float: right!important;
 }
+.navItem{
+	margin:10px;
+}
 
 header {
 	position:relative;

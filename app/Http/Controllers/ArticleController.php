@@ -9,13 +9,17 @@ use App\Article;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 class ArticleController extends Controller
 {
     public function index()
     {
-        $posts = Article::simplePaginate(5);
+        $users = DB::table('articles')
+                   ->orderBy('created_at', 'desc')->get();
+
+        $posts = Article::orderBy('created_at','desc')->simplePaginate(5);
 
         return view('article.index',compact('posts'));
     }
